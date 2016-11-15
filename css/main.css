@@ -27,6 +27,8 @@ a:hover {
     margin-top: 5%;
     margin-bottom: 1em;
     background-color: #cee1ff;
+    background-image: url("../img/cont.png");
+    background-size: 100%;
 }
 
 article {
@@ -93,6 +95,7 @@ figure img {
     border: .1em solid black;
     height: 100%;
     background-color: #cee1ff;
+    background-image: url("../img/g2.png");
 }
 
 nav ul p{
