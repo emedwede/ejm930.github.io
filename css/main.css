@@ -116,8 +116,8 @@ nav img {
 nav {
     overflow: auto;
     border: .1em solid black;
-    width: 20%;
-    position: fixed;
+    width: 90%;
+    margin-top: 3em;
     left: 3%;
     background-color: #f7f9d1;
     border-radius: .5em;
