@@ -4,73 +4,42 @@
 <title>Main Page v1</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
-<script>
-
-function showResult(str) {
-  if (str.length==0) { 
-    document.getElementById("livesearch").innerHTML="";
-    document.getElementById("livesearch").style.border="0px";
-    return;
-  }
-  if (window.XMLHttpRequest) {
-    // code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp=new XMLHttpRequest();
-  } else {  // code for IE6, IE5
-    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
-      document.getElementById("livesearch").innerHTML=this.responseText;
-      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
-    }
-  }
-  xmlhttp.open("GET","apx/livesearch.php?q="+str,true);
-  xmlhttp.send();
-}
-</script>
+<script src="apx/ajax.js"></script>
 </head>
 <body>
 <div class="container">
-    <header class="page_header"><h1>Prototype</h1></header>
+    <header class="page_header"><h1>Home Page</h1></header>
     <div class="links"><nav>
         
         <ul><p>Other Pages</p>
-            <li><a href="">Link1</a></li>
+            <li><a href="pages/com/com1.html">Commentaries</a></li>
             <li><a href="">Link2</a></li>
             <li><a href="">Link3</a></li>
             <li><a href="">Link4</a></li>
             <form>
-                <input type="text" size="30" onkeyup="showResult(this.value)">
+                <p>Type to Connect:</p>
+                <input type="text" size="20" onkeyup="showResult(this.value)">
                 <div id="livesearch"></div>
             </form>
-        </ul><img src=""/>
+        </ul><img src="img/boxBot.png"/>
     </nav></div>
     <article cite="Eric M.">
         <header class="article_header">
-            <h2>Section</h2>
+            <h2>Welcome!</h2>
         </header>
         <section>
-            <p></p>
+            <p>Welcome to my project site for CSE 322 - Web Programming. This site has one purpose and that is to host some various content as a sample site. Feel free to browse and look around and enjoy!</p>
             <aside>
                 <figure>
-                    <img src=""/>
-                    <figcaption>Illustration</figcaption>
+                    <p>Kinda looks like an egg crate doesn't it?</p>
+                    <img src="img/g1.png"/>
+                    <figcaption>Illustration Made in Mathematica</figcaption>
                 </figure>
             </aside>
         </section>
         <section>
             <p></p>
         </section>
-        <footer>
-            <p>This article was written by Eric M. an Applied Computational Mathematics student at 
-                <abbr title="California State University San Bernardino">CSUSB</abbr>.</p>
-        </footer>
-    </article>
-    <article>
-        <footer>
-            <p>This article was written by Eric M. an Applied Computational Mathematics student at 
-                <abbr title="California State University San Bernardino">CSUSB</abbr>.</p>
-        </footer>
     </article>
     </div>
     <a href="https://youtu.be/mn5OEReYkVM" cite="easter egg"><footer class="bottom_footer"><p>Designed by Eric M.</p></footer></a>
